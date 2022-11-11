@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Titre';
+    src: url('Fonts/Title/static/Oswald-Light.ttf');
+}
+@font-face {
+    font-family: 'sousTitre';
+    src: url('Fonts/Paragraphs/Lato-Light.ttf');
+}
+@font-face {
+    font-family: 'Paragraph';
+    src: url('Fonts/Paragraphs/Lato-Regular.ttf');
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h1,h3{
+    font-family: 'Titre';
+}
+h3{
+    font-size: 28px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+p,span{
+    font-family: 'Paragraph';
+    color: grey;
+    font-size: large;
+}
+.bold{
+    font-family: 'Paragraph';
+    color: black;
+    font-weight: bold;
+}
+body{
+    background-image:linear-gradient(#3aa5a4,#7ae5e4);
+}
+.background img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -2;
+}
+.background::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(#3aa5a4,#7ae5e4);
+    opacity: 0.2;
+    z-index: -1;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    font-size: 72px;
+    margin-top: 80px;
+    color: white;
+}
+.title p{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 65px;
+}
+.profilePic{
+    float: left;
+    padding-right: 40px;
+}
+.Box{
+    width: 80%;
+    background-color: white;
+    border-radius: 2px;
+    margin: auto;
+    padding-left: 68px;
+    padding-bottom: 65px;
+    padding-right: 68px;
+    margin-top: 38px;
+    display: table;
+}
+.mesProjetsPics{
+    margin: 0 auto;
+}
+.mesProjetsPics .pic1,.pic2,.pic3{
+    display: inline-block;
+}
+.mesProjetsPics .pic1,.pic2{
+    padding-right: 45px;
+}
+.reseaux div,.langues div,.education div{
+    display:inline-table;
+    width: 30%;
+    padding-right: 35px;
+}
+.reseaux div img{
+    float: left;
+}
+.reseaux div span{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.fa-twitter,.fa-linkedin-in,.fa-dribbble{
+    border: solid grey;
+    border-radius: 2em;
+    border-width: 1px;
+    padding: 5px;
+    margin-right: 5px;
+}
+.contactBox,input,textarea{
+    border: none;
+    background-color: #eee;
+    border-radius: 0.3em;
+    height: 3em;
+    width: 100%;
+    font-family: 'Paragraph';
+    font-size: 1em;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+textarea{
+    height: 13em;
+    font-family: 'Paragraph';
+    font-size: 1em;
+    padding-top: 15px;
+}
+button{
+    border: none;
+    background-color: black;
+    border-radius: 5em;
+    height: 2.5em;
+    width: 5.5em;
+    color: white;
+    font-family: 'Paragraph';
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
